@@ -42,16 +42,17 @@ specificspoof = {}
 nospoofto = []
 victims = []
 
-LOGREQFILE = "dnslog.txt"
-LOGSNIFFFILE = "snifflog.txt"
-LOGALERTFILE = "dnsalert.txt"
-RESOLVCONF = "resolv.conf"
+DIR = "/opt/dns2proxy/"
+LOGREQFILE = DIR+"dnslog.txt"
+LOGSNIFFFILE = DIR+"snifflog.txt"
+LOGALERTFILE = DIR+"dnsalert.txt"
+RESOLVCONF = DIR+"resolv.conf"
 
-victim_file    = "victims.cfg"
-nospoof_file   = "nospoof.cfg"
-nospoofto_file = "nospoofto.cfg"
-specific_file  = "spoof.cfg"
-dominios_file  = "domains.cfg"
+victim_file = DIR+"victims.cfg"
+nospoof_file = DIR+"nospoof.cfg"
+nospoofto_file = DIR+"nospoofto.cfg"
+specific_file = DIR+"spoof.cfg"
+dominios_file = DIR+"domains.cfg"
 
 if len(sys.argv) >2:
     ip = sys.argv[2]
